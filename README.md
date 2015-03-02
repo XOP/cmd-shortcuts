@@ -33,3 +33,15 @@ cmd-shortcuts
     alias gph='git push origin HEAD'
     alias gphu='git push -u origin HEAD'
     alias gpo='git push origin '
+    alias gbc=branchCreateCheckout
+    alias gcmp=commitMessagePush
+    
+    function branchCreateCheckout {
+    	git branch $1
+    	git checkout $1
+    }
+    
+    function commitMessagePush {
+    	git commit -am $1
+    	git push origin HEAD
+    }
