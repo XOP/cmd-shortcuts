@@ -115,3 +115,21 @@ function addSshAgent {
 
 alias agent=addSshAgent
 ```
+
+## .ssh/config
+
+```
+
+# Default Git user
+Host host.com
+  HostName host.com
+  User S.Griffin
+  IdentityFile ~/.ssh/id_rsa
+
+# Github user
+Host github.com
+  HostName github.com
+  User stewiekills
+  IdentityFile ~/.ssh/github_rsa
+
+```
