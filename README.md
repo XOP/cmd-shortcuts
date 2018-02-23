@@ -7,6 +7,10 @@ cmd-shortcuts
 
 ```sh
 
+# npm
+alias npd='npm run dev'
+alias npb='npm run build'
+
 # general
 alias gs='git status '
 alias ga='git add '
@@ -39,13 +43,13 @@ alias gbc=branchCreateCheckout
 alias gcmp=commitMessagePush
 
 function branchCreateCheckout {
-	git branch $1
-	git checkout $1
+    git branch $1
+    git checkout $1
 }
 
 function commitMessagePush {
-	git commit -am "$1"
-	git push origin HEAD
+    git commit -am "$1"
+    git push origin HEAD
 }
 
 ```
